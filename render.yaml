@@ -1,0 +1,90 @@
+services:
+  - type: web
+    name: mc-proxy-main
+    env: docker
+    dockerfilePath: Dockerfile
+
+  - type: web
+    name: mc-game-1
+    env: docker
+    dockerfilePath: Dockerfile
+
+  - type: web
+    name: mc-game-2
+    env: docker
+    dockerfilePath: Dockerfile
+
+  - type: web
+    name: mc-game-3
+    env: docker
+    dockerfilePath: Dockerfile
+
+  - type: web
+    name: mc-game-4
+    env: docker
+    dockerfilePath: Dockerfile
+
+  - type: web
+    name: mc-game-5
+    env: docker
+    dockerfilePath: Dockerfile
+
+  - type: web
+    name: mc-game-6
+    env: docker
+    dockerfilePath: Dockerfile
+
+  - type: web
+    name: mc-game-7
+    env: docker
+    dockerfilePath: Dockerfile
+
+  - type: web
+    name: mc-game-8
+    env: docker
+    dockerfilePath: Dockerfile
+
+  - type: web
+    name: mc-game-9
+    env: docker
+    dockerfilePath: Dockerfile
+
+  - type: web
+    name: mc-game-10
+    env: docker
+    dockerfilePath: Dockerfile
+
+  - type: web
+    name: mc-game-11
+    env: docker
+    dockerfilePath: Dockerfile
+
+  - type: web
+    name: mc-game-12
+    env: docker
+    dockerfilePath: Dockerfile
+
+  - type: web
+    name: mc-game-13
+    env: docker
+    dockerfilePath: Dockerfile
+
+  - type: web
+    name: mc-game-14
+    env: docker
+    dockerfilePath: Dockerfile
+
+  - type: web
+    name: mc-game-15
+    env: docker
+    dockerfilePath: Dockerfile
+
+  - type: web
+    name: mc-game-16
+    env: docker
+    dockerfilePath: Dockerfile
+
+  - type: web
+    name: mc-management
+    env: docker
+    dockerfilePath: Dockerfile

@@ -1,0 +1,38 @@
+🎮 MINECRAFT CLUSTER - QUICK REFERENCE
+======================================
+
+AFTER SERVER IS LIVE:
+
+📊 VIEW LOGS:
+1. Go: https://render.com/dashboard
+2. Click: mc-proxy-main (or any service)
+3. Click: "Logs" tab
+4. See real-time output
+
+💻 CONSOLE/TERMINAL:
+1. Go: https://render.com/dashboard
+2. Click: Service name
+3. Click: "Shell" tab
+4. Type commands directly
+
+📁 SERVER FILES:
+Location: /app/
+- /app/world (player world)
+- /app/server.properties (config)
+- /app/logs (console logs)
+
+Access via:
+- Render Shell tab
+- SFTP download
+- SSH terminal
+
+📥 BACKUPS:
+Auto-saved to Google Drive every 30 min
+Folder: minecraft-cluster-backups
+
+🔗 IMPORTANT URLS:
+- Dashboard: https://render.com/dashboard
+- Management: https://mc-management-70du.onrender.com
+- Google Drive: https://drive.google.com
+
+✅ Read: ACCESS_LOGS_AND_FILES.md for full details
