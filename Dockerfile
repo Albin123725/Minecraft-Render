@@ -2,9 +2,14 @@ FROM eclipse-temurin:21-jre-alpine
 
 WORKDIR /app
 
-RUN apk add --no-cache wget
+RUN apk add --no-cache wget curl jq
 
-RUN wget https://launcher.mojang.com/v1/objects/7ef960dd3fbc85e84e915b4cce6e8f1a43ca4ce6/server.jar -O server.jar && \
+RUN curl -s https://launcher.mojang.com/v1/metadata/launcher | jq -r '.latest.release' > /tmp/version.txt && \
+    VERSION=$(cat /tmp/version.txt) && \
+    curl -s https://launcher.mojang.com/v1/objects/manifest.json | \
+    jq -r '.objects[] | select(.type=="server" and .version=="'$VERSION'") | .sha1' | \
+    xargs -I {} wget https://launcher.mojang.com/v1/objects/{}/server.jar -O server.jar || \
+    wget https://launcher.mojang.com/v1/objects/a28d66ad673dca58cedc4145981800e0def61fdf/server.jar -O server.jar && \
     echo "eula=true" > eula.txt
 
 COPY server.properties .
